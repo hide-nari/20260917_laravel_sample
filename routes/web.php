@@ -6,6 +6,8 @@ Route::view('/', 'welcome')->name('home');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('dashboard', 'dashboard')->name('dashboard');
+
+    Route::livewire('/departments', 'departments.index')->name('departments.index');
 });
 
 require __DIR__.'/settings.php';
