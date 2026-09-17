@@ -124,7 +124,7 @@ new class extends Component {
                                     variant="subtle"
                                     size="xs"
                                 >
-                                    {{--                                    <flux:icon.pencil-off variant="mini"/>--}}
+                                    <flux:icon.pencil-off variant="mini"/>
                                 </flux:button>
                             @endunless
                         </flux:table.cell>
@@ -144,7 +144,7 @@ new class extends Component {
                                     variant="subtle"
                                     size="xs"
                                 >
-                                    {{--                                    <flux:icon.save-off/>--}}
+                                    <flux:icon.save-off/>
                                 </flux:button>
                             @endunless
                         </flux:table.cell>
@@ -154,5 +154,5 @@ new class extends Component {
         </flux:table>
     </div>
     <flux:pagination :paginator="$this->departments"/>
-    <flux:toast position="top right" class="mr-4"/>
+    {{--    <flux:toast position="top right" class="mr-4"/>--}}
 </div>
