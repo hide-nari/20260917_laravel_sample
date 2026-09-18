@@ -3,6 +3,7 @@
 namespace Database\Seeders;
 
 use App\Models\department;
+use App\Models\employee;
 use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -16,12 +17,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        User::factory(10)->create();
 
-//        User::factory()->create([
-//            'name'  => 'Test User',
-//            'email' => 'test@example.com',
-//        ]);
+        User::factory()->create([
+            'name'  => 'Test User',
+            'email' => 'test@example.com',
+        ]);
 
         for ($i = 1; $i <= 10; $i++) {
             Department::create([
@@ -39,6 +40,6 @@ class DatabaseSeeder extends Seeder
             ]);
         }
 
-//        Department::factory(10)->create();
+        Employee::factory(10)->create();
     }
 }

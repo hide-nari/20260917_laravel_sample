@@ -1,6 +1,6 @@
 @props([
-    'departmentCount' => App\Models\Department::all()->count(),
-//    'employerCount' => App\Models\Employer::all()->count(),
+    'departmentCount' => App\Models\department::all()->count(),
+    'employerCount' => App\Models\employee::all()->count(),
 ])
 <x-layouts::app :title="__('Dashboard')">
     <div class="flex h-full w-full flex-1 flex-col gap-4 rounded-xl">
@@ -12,7 +12,7 @@
             </div>
             <flux:separator/>
             <div class="m-6">
-{{--                {{ 'Employer: ' . $employerCount . ' records'}}--}}
+                {{ 'Employee: ' . $employerCount . ' records'}}
             </div>
             <flux:separator/>
         </div>
