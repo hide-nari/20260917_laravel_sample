@@ -44,7 +44,6 @@ new class extends Component {
 };
 ?>
 
-@props(['method' => ''])
 <div class="flex h-full w-full flex-1 flex-col gap-4 rounded-xl">
     <flux:card class="lg:w-1/3">
         <flux:input wire:model="name" label="Name:"></flux:input>
@@ -57,6 +56,8 @@ new class extends Component {
             >{{ Str::ucfirst($method) }}
             </flux:button>
         </div>
-        <flux:button href="{{ route('departments.index') }}" variant="filled">Back</flux:button>
+        <flux:button href="{{ route('departments.index') }}" variant="filled">
+            Back
+        </flux:button>
     </flux:card>
 </div>

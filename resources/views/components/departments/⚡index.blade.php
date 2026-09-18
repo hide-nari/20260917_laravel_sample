@@ -103,12 +103,18 @@ new class extends Component {
             <flux:table.rows>
                 @foreach($this->departments as $department)
                     <flux:table.row :key="$department->id" class="hover:bg-zinc-100 dark:hover:bg-zinc-700">
-                        <flux:table.cell align="center">{{ $department->id }}</flux:table.cell>
+                        <flux:table.cell align="center">
+                            {{ $department->id }}
+                        </flux:table.cell>
                         <flux:table.cell>
                             {{ $department->name }}
                         </flux:table.cell>
-                        <flux:table.cell>{{ $department->created_at }}</flux:table.cell>
-                        <flux:table.cell>{{ $department->updated_at }}</flux:table.cell>
+                        <flux:table.cell>
+                            {{ $department->created_at }}
+                        </flux:table.cell>
+                        <flux:table.cell>
+                            {{ $department->updated_at }}
+                        </flux:table.cell>
                         <flux:table.cell align="center">
                             @unless($department->deleted_at)
                                 <flux:button
@@ -154,5 +160,4 @@ new class extends Component {
         </flux:table>
     </div>
     <flux:pagination :paginator="$this->departments"/>
-    {{--    <flux:toast position="top right" class="mr-4"/>--}}
 </div>
