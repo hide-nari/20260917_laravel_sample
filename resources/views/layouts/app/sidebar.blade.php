@@ -21,6 +21,9 @@
                                :current="request()->routeIs('departments.index')" wire:navigate>
                 {{ __('Departments') }}
             </flux:sidebar.item>
+            <flux:navlist.item icon="circle-stack" :href="route('employees.index')"
+                               :current="request()->routeIs('employees.index')"
+                               wire:navigate>{{ __('Employee') }}</flux:navlist.item>
         </flux:sidebar.group>
     </flux:sidebar.nav>
 
