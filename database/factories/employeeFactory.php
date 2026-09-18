@@ -16,11 +16,10 @@ class employeeFactory extends Factory
         return [
             'name'       => $this->faker->name(),
             'email'      => $this->faker->unique()->safeEmail(),
-            'image'      => $this->faker->word(),
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now(),
 
-            'department_id' => department::factory(),
+            'department_id' => department::get()->random()->id,
         ];
     }
 }
