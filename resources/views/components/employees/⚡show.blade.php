@@ -84,5 +84,4 @@ new class extends Component {
             <flux:button href="{{ route('employees.index') }}" variant="filled">Back</flux:button>
         </div>
     </flux:card>
-    <flux:toast position="top right" class="mr-4"/>
 </div>
