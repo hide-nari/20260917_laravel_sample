@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\department;
+use App\Models\Department;
 use Livewire\Attributes\Validate;
 use Livewire\Component;
 

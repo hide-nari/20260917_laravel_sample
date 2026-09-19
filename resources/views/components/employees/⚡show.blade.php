@@ -1,7 +1,7 @@
 <?php
 
-use App\Models\department;
-use App\Models\employee;
+use App\Models\Department;
+use App\Models\Employee;
 use Illuminate\Support\Collection;
 use Livewire\Attributes\Validate;
 use Livewire\Component;

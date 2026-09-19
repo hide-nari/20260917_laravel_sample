@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\employee;
+use App\Models\Employee;
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Database\Eloquent\Builder;
 use Livewire\Attributes\Computed;

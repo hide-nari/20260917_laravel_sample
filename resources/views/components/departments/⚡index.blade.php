@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\department;
+use App\Models\Department;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Pagination\LengthAwarePaginator;
 use Livewire\Attributes\Computed;
