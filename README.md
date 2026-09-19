@@ -168,6 +168,9 @@ new class extends Component {
 ```
 
 ## departments.show.blade.php
+
+<img width="1913" height="984" alt="image" src="https://github.com/user-attachments/assets/7db62881-1502-4e10-a3bf-8143e2609570" />
+
 ```
 <?php
 
