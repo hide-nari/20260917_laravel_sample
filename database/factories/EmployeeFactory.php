@@ -7,6 +7,9 @@ use App\Models\Employee;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
 
+/**
+ * @extends Factory<Employee>
+ */
 class EmployeeFactory extends Factory
 {
     protected $model = Employee::class;
