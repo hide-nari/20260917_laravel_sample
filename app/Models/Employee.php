@@ -22,7 +22,7 @@ class Employee extends Model
         ];
 
     /**
-     * @return BelongsTo<Department, $this>
+     * @return BelongsTo<Department,$this>
      */
     public function department(): BelongsTo
     {

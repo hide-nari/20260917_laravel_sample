@@ -1,6 +1,6 @@
 @props([
-    'departmentCount' => App\Models\department::all()->count(),
-    'employerCount' => App\Models\employee::all()->count(),
+    'departmentCount' => App\Models\Department::all()->count(),
+    'employerCount' => App\Models\Employee::all()->count(),
 ])
 <x-layouts::app :title="__('Dashboard')">
     <div class="flex h-full w-full flex-1 flex-col gap-4 rounded-xl">
