@@ -1,6 +1,7 @@
 ## departments.index.blade.php
 <img width="1911" height="982" alt="image" src="https://github.com/user-attachments/assets/823313e6-eb26-4d77-b734-1e6b5621b734" />
-```code
+
+```
 <?php
 
 use App\Models\Department;
